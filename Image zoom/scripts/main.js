@@ -10,11 +10,12 @@ $(()=> {
                 reader.readAsDataURL(this.files[0]);
             }
 });
-    $("#upload").resizable({
-        handles: "n, e, s, w, ne, se, sw, nw",
+    $('.imgWrapper').resizable({
+        handles: 'ne, se, sw, nw',
         maxHeight: 600,
         maxWidth: 600,
         minHeight: 150,
-        minWidth: 150
+        minWidth: 150,
+        alsoResize: '#upload'
     });
 });

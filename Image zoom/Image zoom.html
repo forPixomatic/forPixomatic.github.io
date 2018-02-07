@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/main.css"/>
   <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css"/>
+  <link rel="stylesheet" href="styles/main.css"/>
   <title>Image zoom</title>
   <script src="scripts/jquery-3.3.1.min.js"></script>
   <script src="scripts/main.js"></script>
@@ -11,12 +11,18 @@
 </head>
 <body>
   <div class="wrapper">
-     <form>
-         <input id="select" type='file'/>
-         <div class="imgWrapper">
-             <img id="upload"  class="resize-drag" src="#" alt="image" />
-         </div>
-     </form>
+     <main>
+         <form>
+           <label for="select">
+                <img id="folder" src="images/folder-2.png" alt="folder" title="select image"/>
+                <input id="select" type="file"/>
+                <p class="text">Select image</p>
+          </label>  
+          <div class="imgWrapper">
+                <img id="upload"  class="resize-drag" src="#" alt="image" />
+          </div>
+         </form>
+     </main>
   </div>
 </body>
 </html>
